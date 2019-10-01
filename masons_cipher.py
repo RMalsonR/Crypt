@@ -1,31 +1,13 @@
 class Cell:
     string = ""
-    first_cell = ''
-    second_cell = ''
-    third_cell = ''
-    fourth_cell = ''
-    fifth_cell = ''
-    sixth_cell = ''
-    seventh_cell = ''
-    eighth_cell = ''
-    ninth_cell = ''
 
     def __init__(self, cell):
         self.string = cell
-        self.first_cell = cell[0]
-        self.second_cell = cell[1]
-        self.third_cell = cell[2]
-        self.fourth_cell = cell[3]
-        self.fifth_cell = cell[4]
-        self.sixth_cell = cell[5]
-        self.seventh_cell = cell[6]
-        self.eighth_cell = cell[7]
-        self.ninth_cell = cell[8]
 
     def __str__(self):
-        print(self.first_cell + self.second_cell + self.third_cell)
-        print(self.fourth_cell + self.fifth_cell + self.sixth_cell)
-        print(self.seventh_cell + self.eighth_cell + self.ninth_cell + '\n')
+        print(self.string[0] + self.string[1] + self.string[2])
+        print(self.string[3] + self.string[4] + self.string[5])
+        print(self.string[6] + self.string[7] + self.string[8] + '\n')
         return self.string
 
 
