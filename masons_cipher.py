@@ -11,20 +11,51 @@ class Cell:
         return self.string
 
 
-def encrypt(word, dictionary):
-    for letter in word:
-        dictionary[letter].__str__()
+def encrypt(_word, _dictionary):
+    for letter in _word:
+        _dictionary[letter].__str__()
 
 
-def decrypt(cells, dictionary):
+def decrypt(_cells, _dictionary):
     result = ''
-    for cell in cells:
-        for word in dictionary:
-            if is_equal(dictionary[word].string, cell):
-                result += word
+    for cell in _cells:
+        for _word in _dictionary:
+            if is_equal(_dictionary[_word].string, cell):
+                result += _word
                 break
     print(result)
 
 
-def is_equal(word, cell):
-    return cell.string == word
+def is_equal(_word, cell):
+    return cell.string == _word
+
+
+if __name__ == '__main__':
+    dictionary = {
+        'a': Cell('--+ *|  |'), 'b': Cell('--+ *|--+'),
+        'c': Cell('  | *|--+'), 'd': Cell('+-+|*|| |'),
+        'e': Cell('+-+|*|+-+'), 'f': Cell('| ||*|+-+'),
+        'g': Cell('+--|* |  '), 'h': Cell('+--|* +--'),
+        'i': Cell('|  |* +--'), 'j': Cell('--+  |  |'),
+        'k': Cell('--+  |--+'), 'l': Cell('  |  |--+'),
+        'm': Cell('+-+| || |'), 'n': Cell('+-+| |+-+'),
+        'o': Cell('| || |+-+'), 'p': Cell('+--|  |  '),
+        'q': Cell('+--|  +--'), 'r': Cell('|  |  +--'),
+        's': Cell('   \*/ V '), 't': Cell(' / <*  \ '),
+        'u': Cell(' ^ /*\   '), 'v': Cell(' \  *> / '),
+        'w': Cell('   \ / V '), 'x': Cell(' / <   \ '),
+        'y': Cell(' ^ / \   '), 'z': Cell(' \   > / '),
+    }
+    print('Enter the word: ')
+    word = input()
+    print('Encrypt: ')
+    encrypt(word, dictionary)
+    print('Decrypt: ')
+    print('Enter the cipher:')
+    cells = []
+    while True:
+        cipher = input()
+        if not cipher:
+            break
+        cells.append(Cell(cipher))
+    decrypt(cells, dictionary)
