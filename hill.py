@@ -1,6 +1,6 @@
 from re import findall
 
-ALPHA = tuple("АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ 1234567890")
+ALPHA = tuple("ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890")
 MATRIX_LENGTH = 3
 MATRIX_MOD = len(ALPHA)
 MATRIX_SQUARE = MATRIX_LENGTH * MATRIX_LENGTH
