@@ -78,7 +78,6 @@ def decrypt(table, split_word):
     return result
 
 
-# 610276202919
 if __name__ == '__main__':
     key = input('Enter the key: ').upper()
     key = sorted(set(key), key=key.index)
