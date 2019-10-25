@@ -56,7 +56,6 @@ def encrypt(table, word):
 
 def split_encrypted(word, key):
     result = []
-    ln = len(key)
     i = 0
     while i < len(word):
         if int(word[i]) > 3:
