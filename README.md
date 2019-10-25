@@ -7,3 +7,4 @@ Include:
 3) PlayFair Cipher  
 4) Hill Cipher  
 5) Combined Cipher
+6) Shadow Cipher  
