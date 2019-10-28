@@ -11,3 +11,4 @@ ___
 * Variant Cipher
 
 #####Permutation Ciphers:
+* Simple single swap cipher
