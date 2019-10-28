@@ -57,10 +57,11 @@ def decrypt(cipher, table):
     find_str = cipher.split(' ')
     for find_value in find_str:
         for i, value_i in enumerate(table):
-            for j, value_j in enumerate(value_i):
+            for j, value_j in enumerate(table[i]):
                 if find_value == value_j:
                     for letter in LANGUAGE:
                         if LANGUAGE[letter] == i: result += letter
+                    for letter in LANGUAGE:
                         if LANGUAGE[letter] == j: result += letter
     return result
 
