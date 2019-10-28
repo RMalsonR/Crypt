@@ -19,6 +19,16 @@ def encrypt(table, world):
     return result
 
 
+def decrypt(table, world):
+    result = ''
+    for val in table:
+        result += world[val-1]
+    return result
+
+
 if __name__ == '__main__':
     world = input('Enter the world: ').upper()
-    print('Encrypt:\n ', encrypt(create_table(world), world))
+    table = create_table(world)
+    print('Encrypt:\n ', encrypt(table, world))
+    world_decrypt = input('Enter world, witch you get in encrypt: ').upper()
+    print('Decrypt:\n ', decrypt(table, world_decrypt))
