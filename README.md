@@ -13,3 +13,4 @@ ___
 #####Permutation Ciphers:
 * Simple single swap cipher
 * Block single swap cipher
+* Route shuffle code
