@@ -14,3 +14,4 @@ ___
 * Simple single swap cipher
 * Block single swap cipher
 * Route shuffle code
+* Vertical permutation cipher without decrypt
