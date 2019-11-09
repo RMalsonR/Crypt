@@ -14,4 +14,5 @@ ___
 * Simple single swap cipher
 * Block single swap cipher
 * Route shuffle code
-* Vertical permutation cipher without decrypt
+* Vertical permutation cipher without decrypt **VERY RUDE, DON'T USE IT, BEFORE REFACTORING!!!**
+* Cipher "Swivel grate" **ONLY FOR 4x4 MATRIX**
