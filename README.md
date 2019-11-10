@@ -16,4 +16,5 @@ ___
 * Route shuffle code
 * Vertical permutation cipher without decrypt **VERY RUDE, DON'T USE IT, BEFORE REFACTORING!!!**
 * Cipher "Swivel grate" **ONLY FOR 4x4 MATRIX**
-* Cipher "Magic squares"
+* Cipher "Magic squares" **USE COMMENTED CODE!**
+* Double permutation cipher

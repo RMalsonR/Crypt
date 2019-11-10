@@ -1,20 +1,26 @@
-import numpy as np
+# import numpy as np
 
 
 def create_table():
-    N = 4
-    magic_square = np.zeros((N, N), dtype=int)
-    n = 0
-    i, j = 0, N // 2
-    while n <= N ** 2:
-        magic_square[i, j] = n
-        n += 1
-        newi, newj = (i - 1) % N, (j + 1) % N
-        if magic_square[newi, newj]:
-            i += 1
-        else:
-            i, j = newi, newj
-    return magic_square
+    # N = 4
+    # magic_square = np.zeros((N, N), dtype=int)
+    # n = 0
+    # i, j = 0, N // 2
+    # while n <= N ** 2:
+    #     magic_square[i, j] = n
+    #     n += 1
+    #     newi, newj = (i - 1) % N, (j + 1) % N
+    #     if magic_square[newi, newj]:
+    #         i += 1
+    #     else:
+    #         i, j = newi, newj
+    # return magic_square
+    return [
+        [16, 3, 2, 13],
+        [5, 10, 11, 8],
+        [9, 6, 7, 12],
+        [4, 15, 14, 1]
+    ]
 
 
 def create_intermediate_table(table, word):
