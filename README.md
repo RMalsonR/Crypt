@@ -9,6 +9,7 @@ ___
 * Combined Cipher  
 * Shadow Cipher  
 * Variant Cipher
+* Matrix Rotate Cipher
 
 ##### Permutation Ciphers:
 * Simple single swap cipher
